@@ -1,0 +1,86 @@
+// plugins.less
+
+/*
+Plugins
+---------------------------------------------------------------------------------------------------- */
+
+/* Genesis eNews Extended
+--------------------------------------------- */
+
+.enews-widget {
+	color: @gray-light;
+}
+
+.enews-widget .widget-title {
+	color: @white;
+}
+
+.enews-widget input {
+	// margin-bottom: 16px;
+	// margin-bottom: 1.6rem;
+	.margin-bottom (16);
+}
+
+.enews-widget input:focus {
+	border: 1px solid @gray-darker;
+}
+
+.enews-widget input[type="submit"] {
+	background-color: @orange;
+	color: @white;
+	margin: 0;
+	width: 100%;
+}
+
+.enews-widget input:hover[type="submit"] {
+	background-color: @white;
+	color: @gray-dark;
+}
+
+/* Genesis Latest Tweets
+--------------------------------------------- */
+
+.latest-tweets ul li {
+	// margin-bottom: 16px;
+	// margin-bottom: 1.6rem;
+	.margin-bottom (16);
+}
+
+/* Gravity Forms
+--------------------------------------------- */
+
+div.gform_wrapper input[type="email"],
+div.gform_wrapper input[type="text"],
+div.gform_wrapper textarea,
+div.gform_wrapper .ginput_complex label {
+	// font-size: 16px;
+	// font-size: 1.6rem;
+	.font-size (@font-size-base);
+	// padding: 16px;
+	// padding: 1.6rem;
+	.padding (16);
+}
+
+div.gform_wrapper .ginput_complex label {
+	padding: 0;
+}
+
+div.gform_wrapper li,
+div.gform_wrapper form li {
+	// margin: 16px 0 0;
+	// margin: 1.6rem 0 0;
+	.margin-three-values (16, 0, 0);
+}
+
+div.gform_wrapper .gform_footer input[type="submit"] {
+	// font-size: 14px;
+	// font-size: 1.4rem;
+	.font-size (@font-size-small);
+}
+
+/* Jetpack
+--------------------------------------------- */
+
+img#wpstats {
+	display: none;
+}
