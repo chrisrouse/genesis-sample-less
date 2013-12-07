@@ -1,0 +1,81 @@
+// variables.less
+// This file contains reusable styles.
+
+// Colors
+// -------------------------
+
+// whites
+@white-smoke:               #f5f5f5;
+@white:                     #fff;
+
+// black
+@black:                     #000;
+
+// grays
+@gray-darker:               #ddd;
+@gray-dark:                 #333;
+@gray:                      #666;
+@gray-light:                #999;
+@gray-lighter:              #eee;
+
+// other colors
+@orange:                    #f35225;
+@orange-light:              #f15123;
+@yellow:                    #ff0;
+
+// Scaffolding
+// -------------------------
+@body-bg:                   @white-smoke;
+@text-color:                @gray;
+
+// Links
+// -------------------------
+
+@link-color:                @orange-light;
+@link-hover-color:          @gray-darker;
+
+
+// Typography
+// -------------------------
+
+@font-family-sans-serif:    'Helvetica Neue', Helvetica, Arial, sans-serif;
+@font-family-sans-serif-alt: Lato, sans-serif;
+@font-family-serif:         Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:     Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:          @font-family-sans-serif;
+@font-family-alt:           @font-family-sans-serif-alt;
+@font-family-base-weight:   300;
+@font-family-weight-bold:   700;
+
+@font-size-base:            16; // Mixin handles px and rem, so don't add those here.
+@font-size-large:           ceil(@font-size-base * 1.875); // ~30px
+@font-size-medium:          ceil(@font-size-base * 1.75); // ~28px
+@font-size-small:           ceil(@font-size-base * 0.875); // ~14px
+
+@font-size-h1:              floor(@font-size-base * 2.25); // ~36px
+@font-size-h2:              floor(@font-size-base * 1.875); // ~30px
+@font-size-h3:              ceil(@font-size-base * 1.5); // ~24px
+@font-size-h4:              ceil(@font-size-base * 1.25); // ~20px
+@font-size-h5:              ceil(@font-size-base * 1.125); // ~18px
+@font-size-h6:              @font-size-base;
+
+@line-height-base:          1.625; // 26/16
+@line-height-computed:      floor(@font-size-base * @line-height-base); // ~26px
+
+
+@headings-font-family:      @font-family-alt;
+@headings-font-weight:      700;
+@headings-line-height:      1.2;
+@headings-color:            @gray-dark;
+
+
+// Components
+// -------------------------
+// Based on 16px font-size and 1.625 line-height (~26px to start)
+
+@border-radius-base:        3px;
+
+
+
+
+

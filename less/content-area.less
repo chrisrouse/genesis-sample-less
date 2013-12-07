@@ -1,0 +1,244 @@
+// content-area.less
+
+/*
+Content Area
+---------------------------------------------------------------------------------------------------- */
+
+/* Entries
+--------------------------------------------- */
+
+.entry {
+	background-color: @white;
+	// border-radius: 3px;
+	.border-radius (@radius: @border-radius-base);
+	// margin-bottom: 40px;
+	// margin-bottom: 4rem;
+	.margin-bottom (40);
+	// padding: 40px 40px 24px;
+	// padding: 4rem 4rem 2.4rem;
+	.padding-three-values (40, 40, 24);
+}
+
+.entry-content a {
+	border-bottom: 1px solid @gray-darker;
+	color: @orange-light;
+}
+
+.entry-content a:hover {
+	color: @gray-dark;
+}
+
+.entry-content .attachment a,
+.entry-content .gallery a {
+	border: none;
+}
+
+.entry-content ol,
+.entry-content p,
+.entry-content ul,
+.quote-caption {
+	// margin-bottom: 26px;
+	// margin-bottom: 2.6rem;
+	.margin-bottom (26);
+}
+
+.entry-content ol,
+.entry-content ul {
+	// margin-left: 40px;
+	// margin-left: 4rem;
+	.margin-left (40);
+}
+
+.entry-content ol li {
+	list-style-type: decimal;
+}
+
+.entry-content ul li {
+	list-style-type: disc;
+}
+
+.entry-content ol ol,
+.entry-content ul ul {
+	margin-bottom: 0;
+}
+
+.entry-content .search-form {
+	width: 50%;
+}
+
+.entry-meta {
+	color: @gray-light;
+	// font-size: 14px;
+	// font-size: 1.4rem;
+	.font-size (@font-size-small);
+}
+
+.entry-meta a {
+	border-bottom: 1px solid @gray-darker;
+}
+
+.entry-header .entry-meta {
+	// margin-bottom: 24px;
+	// margin-bottom: 2.4rem;
+	.margin-bottom (24);
+}
+
+.entry-footer .entry-meta {
+	border-top: 2px solid @white-smoke;
+	// margin: 0 -40px;
+	// margin: 0 -4rem;
+	.margin-two-values (0, -40);
+	// padding: 32px 40px 8px;
+	// padding: 3.2rem 4rem 0.8rem;
+	.padding-three-values (32, 40, 8);
+}
+
+.entry-comments-link::before {
+	content: "\2014";
+	// margin: 0 6px 0 2px;
+	// margin: 0 0.6rem 0 0.2rem;
+	.margin-four-values (0, 6, 0, 2);
+}
+
+.entry-categories,
+.entry-tags {
+	display: block;
+}
+
+/* Pagination
+--------------------------------------------- */
+
+.archive-pagination,
+.entry-pagination {
+	// font-size: 14px;
+	// font-size: 1.4rem;
+	.font-size (@font-size-small);
+	// margin: 40px 0;
+	// margin: 4rem 0;
+	.margin-two-values (40, 0);
+}
+
+.archive-pagination li {
+	display: inline;
+}
+
+.archive-pagination li a {
+	background-color: @gray-dark;
+	// border-radius: 3px;
+	.border-radius (@radius: @border-radius-base);
+	color: @white;
+	cursor: pointer;
+	display: inline-block;
+	// padding: 8px 12px;
+	// padding: 0.8rem 1.2rem;
+	.padding-two-values (8, 12);
+}
+
+.archive-pagination li a:hover,
+.archive-pagination li.active a {
+	background-color: @orange-light;
+}
+
+.entry-pagination a {
+	border-bottom: 1px solid @gray-darker;
+}
+
+/* Comments
+--------------------------------------------- */
+
+.comment-respond,
+.entry-comments,
+.entry-pings {
+	background-color: @white;
+	// margin-bottom: 40px;
+	// margin-bottom: 4rem;
+	.margin-bottom (40);
+}
+
+.entry-comments {
+	// padding: 40px;
+	// padding: 4rem;
+	.padding (40);
+}
+
+.comment-respond,
+.entry-pings {
+	// padding: 40px 40px 16px;
+	// padding: 4rem 4rem 1.6rem;
+    .padding-three-values (40, 40, 16);
+}
+
+.comment-respond a,
+.entry-comments a {
+	border-bottom: 1px solid @gray-darker;
+}
+
+.comment-content {
+	clear: both;
+}
+
+.entry-comments .comment-author {
+	margin-bottom: 0;
+}
+
+.comment-respond input[type="email"],
+.comment-respond input[type="text"],
+.comment-respond input[type="url"] {
+	width: 50%
+}
+
+.comment-respond label {
+	display: block;
+	// margin-right: 12px;
+	// margin-right: 1.2rem;
+	.margin-right (12);
+}
+
+.comment-list li,
+.ping-list li {
+	list-style-type: none;
+}
+
+.comment-list li {
+	// margin-top: 24px;
+	// margin-top: 2.4rem;
+	.margin-top (24);
+	// padding: 32px;
+	// padding: 3.2rem;
+	.padding (32);
+}
+
+.comment-list li li {
+	// margin-right: -32px;
+	// margin-right: -3.2rem;
+	.margin-right (-32);
+}
+
+li.comment {
+	background-color: @white-smoke;
+	border: 2px solid @white;
+	border-right: none;
+}
+
+.comment .avatar {
+	// margin: 0 16px 24px 0;
+	// margin: 0 1.6rem 2.4rem 0;
+	.margin-four-values (0, 16, 24, 0);
+}
+
+.entry-pings .reply {
+	display: none;
+}
+
+.bypostauthor {
+}
+
+.form-allowed-tags {
+	background-color: @white-smoke;
+	// font-size: 14px;
+	// font-size: 1.4rem;
+	.font-size (@font-size-small);
+	// padding: 24px;
+	// padding: 2.4rem;
+	.padding (24);
+}
